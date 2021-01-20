@@ -38,6 +38,7 @@ int main()
     double u;
 
     cout << "x0 = "; cin>>x0; cout << endl;
+	x = x0;
 
     double tab[10000];
     for(int i = 0; i < 10000; i++)
@@ -45,7 +46,6 @@ int main()
         u = (1.0*x)/m;
         tab[i]=u;
         x = generator(x);
-//        cout << tab[i] << endl;
     }
 
     cout << "Srednia = " << srednia(tab) << endl;
